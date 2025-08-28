@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,6 +112,7 @@
         
         .hero-content {
             flex: 1;
+            margin-left: 3rem;
         }
         
         .hero-image {
@@ -128,11 +130,17 @@
             font-size: 3rem;
             margin-bottom: 1rem;
             color: var(--secondary-color);
+            text-align: left;
+            line-height: 1.2;
+            height: 7.2rem;
         }
         
         .typed-text {
             color: var(--primary-color);
             font-weight: 600;
+            display: inline-block;
+            min-width: 280px;
+            text-align: left;
         }
         
         .hero p {
@@ -140,6 +148,8 @@
             margin-bottom: 2rem;
             color: var(--light-text);
             max-width: 600px;
+            margin-left: 0;
+            padding-left: 0;
         }
         
         .btn {
@@ -458,7 +468,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>IBM Maximo Consultant & <span class="typed-text">Full-Stack Developer</span></h1>
+                <h1>IBM Maximo Consultant &<br><span class="typed-text">Full-Stack Developer</span></h1>
                 <p>Software Engineering student at ESPRIT with a Bachelor's degree in Software Engineering and Information Systems. Specialized in Java, Spring Boot, and PHP, with expertise in JSP, XML, JavaScript, and Python. Ex-team lead with 3 years of management experience.</p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn">View Projects</a>
@@ -576,6 +586,61 @@
                         <a href="#" class="project-link">Learn More</a>
                     </div>
                 </div>
+                
+                <div class="project-card" data-category="professional">
+                    <div class="project-image">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Maximo Excel Data Management Component</h3>
+                        <p class="project-description">Development of a data management component inside Maximo in the form of an excel table interface, enabling seamless data manipulation directly within Maximo.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="professional">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Maximo AI Assistant</h3>
+                        <p class="project-description">AI-powered application operating as a prompt executor for Maximo operations. Similar to ChatGPT but 100% focused on Maximo, executing commands like create, update, and select through API calls.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="freelance">
+                    <div class="project-image">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI CV Analyzer</h3>
+                        <p class="project-description">Freelance project: AI-powered CV analysis tool where users upload their CV and receive comprehensive analysis with suggestions to pass ATS filters and improve all CV aspects including language.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="professional spring">
+                    <div class="project-image">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Spring Boot Migration - Numerequart</h3>
+                        <p class="project-description">Migration of Spring Boot project "Numerequart" from version 2.6.3 to 3.5.5, ensuring compatibility and leveraging new framework features.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="professional">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Maximo Migration to MAS9</h3>
+                        <p class="project-description">Migration of Maximo from version 7.6 on WebSphere to MAS9 (Maximo Application Suite) on OpenShift, modernizing infrastructure and deployment architecture.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -620,7 +685,7 @@
     <script>
         // Simple typing animation
         const typedText = document.querySelector('.typed-text');
-        const textArray = ["Full-Stack Developer", "Java Expert", "Spring Boot Specialist", "IBM Maximo Consultant"];
+        const textArray = ["Full-Stack Developer", "Java Expert", "Spring Boot Specialist", "Software Engineer"];
         let textArrayIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
